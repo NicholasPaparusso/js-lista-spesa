@@ -29,7 +29,7 @@ const toBuyList =
 
 // Creo un ciclo e l'elemento li dinamicamente e in ogni li stampo un elemento della lista
  for ( let i = 0; i < toBuyList.length ; i++ ){
- li = document.createElement('li');
+ const li = document.createElement('li');
  li.innerHTML = toBuyList[i];
  firstList.appendChild(li);
  }
@@ -37,7 +37,7 @@ const toBuyList =
 // Creo un counter fuori dal ciclo while
 let i= 0;
 while(i < toBuyList.length){
-  li = document.createElement('li');
+  const li = document.createElement('li');
   li.innerHTML = toBuyList[i];
   secondList.appendChild(li);
   i++ ;
